@@ -1,8 +1,22 @@
 unique_name: Northwind Sales
 object_type: model
 label: Northwind_Sales_Model
-dimensions: []
-metrics: []
+dimensions:
+  - Shipped_Date
+  - Order_Date
+metrics:
+  - unique_name: m_orders_itemquantity_sum
+    folder: order metrics
+  - unique_name: m_orders_itemdiscount_sum
+    folder: order metrics
+  - unique_name: m_orders_itemamount_sum
+    folder: order metrics
+  - unique_name: m_orders_orderid_sum
+    folder: order metrics
+  - unique_name: m_orders_Tax amount_sum
+    folder: order metrics
+  - unique_name: m_orders_Fulfillment Duration_sum
+    folder: order metrics
 relationships:
   - unique_name: orders_customerid_to_dimcustomer_customer
     from:
