@@ -5,21 +5,21 @@ hierarchies:
   - unique_name: customer
     label: Customer
     levels:
-      - unique_name: country
-      - unique_name: city
+      - unique_name: Customer country
+      - unique_name: customer city
       - unique_name: type
       - unique_name: customer
 level_attributes:
-  - unique_name: country
-    label: country
+  - unique_name: Customer country
+    label: Customer country
     contains_unique_names: false
     dataset: Customers
     is_unique_key: false
     key_columns:
       - customercountry
     name_column: customercountry
-  - unique_name: city
-    label: city
+  - unique_name: customer city
+    label: customer city
     contains_unique_names: false
     dataset: Customers
     is_unique_key: false
@@ -42,5 +42,4 @@ level_attributes:
     key_columns:
       - customerid
     name_column: customername
-  
 type: standard

@@ -5,20 +5,20 @@ hierarchies:
   - unique_name: employee
     label: employee
     levels:
-      - unique_name: country
-      - unique_name: city
+      - unique_name: employee country
+      - unique_name: employee city
       - unique_name: employee
 level_attributes:
-  - unique_name: country
-    label: country
+  - unique_name: employee country
+    label: employee country
     contains_unique_names: false
     dataset: employees
     is_unique_key: false
     key_columns:
       - employee_country
     name_column: employee_country
-  - unique_name: city
-    label: city
+  - unique_name: employee city
+    label: employee city
     contains_unique_names: false
     dataset: employees
     is_unique_key: false
@@ -33,5 +33,4 @@ level_attributes:
     key_columns:
       - employee_id
     name_column: employee_name
-  
 type: standard

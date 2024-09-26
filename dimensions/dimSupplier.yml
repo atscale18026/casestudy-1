@@ -5,20 +5,20 @@ hierarchies:
   - unique_name: Supplier
     label: Supplier
     levels:
-      - unique_name: Country
-      - unique_name: City
+      - unique_name: Supplier Country
+      - unique_name: Supplier City
       - unique_name: Supplier
 level_attributes:
-  - unique_name: Country
-    label: Country
+  - unique_name: Supplier Country
+    label: Supplier Country
     contains_unique_names: false
     dataset: Products
     is_unique_key: false
     key_columns:
       - suppliercountry
     name_column: suppliercountry
-  - unique_name: City
-    label: City
+  - unique_name: Supplier City
+    label: Supplier City
     contains_unique_names: false
     dataset: Products
     is_unique_key: false
@@ -33,5 +33,4 @@ level_attributes:
     key_columns:
       - productid
     name_column: suppliername
-  
 type: standard

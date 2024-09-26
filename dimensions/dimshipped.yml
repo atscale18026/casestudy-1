@@ -5,20 +5,20 @@ hierarchies:
   - unique_name: Shipper
     label: Shipper
     levels:
-      - unique_name: country
-      - unique_name: city
+      - unique_name: shipped country
+      - unique_name: shipped city
       - unique_name: Shipper
 level_attributes:
-  - unique_name: country
-    label: country
+  - unique_name: shipped country
+    label: shipped country
     contains_unique_names: false
     dataset: orders
     is_unique_key: false
     key_columns:
       - shippedcountry
     name_column: shippedcountry
-  - unique_name: city
-    label: city
+  - unique_name: shipped city
+    label: shipped city
     contains_unique_names: false
     dataset: orders
     is_unique_key: false
@@ -33,5 +33,4 @@ level_attributes:
     key_columns:
       - rowid
     name_column: shippername
-  
 type: standard
