@@ -1,0 +1,46 @@
+unique_name: dimcustomer
+object_type: dimension
+label: dimcustomer
+hierarchies:
+  - unique_name: customer
+    label: Customer
+    levels:
+      - unique_name: country
+      - unique_name: city
+      - unique_name: type
+      - unique_name: customer
+level_attributes:
+  - unique_name: country
+    label: country
+    contains_unique_names: false
+    dataset: Customers
+    is_unique_key: false
+    key_columns:
+      - customercountry
+    name_column: customercountry
+  - unique_name: city
+    label: city
+    contains_unique_names: false
+    dataset: Customers
+    is_unique_key: false
+    key_columns:
+      - customercity
+    name_column: customercity
+  - unique_name: type
+    label: type
+    contains_unique_names: false
+    dataset: Customers
+    is_unique_key: false
+    key_columns:
+      - customertype
+    name_column: customertype
+  - unique_name: customer
+    label: Customer
+    contains_unique_names: false
+    dataset: Customers
+    is_unique_key: false
+    key_columns:
+      - customerid
+    name_column: customername
+  
+type: standard
